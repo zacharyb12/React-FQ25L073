@@ -14,7 +14,6 @@ function DemoCollections(){
         {id: 4, name: "souris", price: 150 , promo : false},
     ]
 
-
         // liste d'objets sans id
     const productsWithoutId = [
         {name: "Ordinateur", price: 1500 , promo : true},
@@ -29,6 +28,7 @@ function DemoCollections(){
         <>
         <h1>Les collections</h1>
 
+{/*Liste simple*/}
         <div className="card w-75 m-auto mt-1">
             <h2>Liste simple : string</h2>
             {/* affichage d'une liste en string*/}
@@ -36,6 +36,7 @@ function DemoCollections(){
             {list.map(  (fruit) => <p>{fruit}</p> ) }
         </div>
 
+{/*Liste objets avec id*/}
         <div className="card w-75 m-auto mt-1">
             <h2>Liste d'objets avec id</h2>
 
@@ -48,6 +49,7 @@ function DemoCollections(){
             </ul>
         </div>
 
+{/*Liste objets sans id*/}
         <div className="card w-75 m-auto mt-1">
             <h2>Liste d'objets sans id</h2>
             {/*Dans le cas ou aucune valeur n'est utilisable comme Key*/}
@@ -60,6 +62,7 @@ function DemoCollections(){
             )}
         </div>
 
+{/*Liste objets deux composants*/}
         <div>
             <h4>Liste et item dans deux composants séparés</h4>
             <ListCollection list={products} />
@@ -82,12 +85,12 @@ function ItemCollection({ p }){
     )
 }
 
-function ListCollection(list){
+function ListCollection({ list }){
     return (
         <>
-        <ul>
-            {list.map ( (item) => <ItemCollection p={item}/>)}
-        </ul>
+            <ul>
+                {list.map ( (item) => <ItemCollection p={item}/>)}
+            </ul>
         </>
     )
 }
