@@ -60,6 +60,11 @@ function DemoCollections(){
             )}
         </div>
 
+        <div>
+            <h4>Liste et item dans deux composants séparés</h4>
+            <ListCollection list={products} />
+        </div>
+
         </>
     )
 }
@@ -73,6 +78,16 @@ function ItemCollection({ p }){
                 <p>id : {p.id}</p>
                 <button href={`/product/details/${p.id}`}>Details</button>
             </li>
+        </>
+    )
+}
+
+function ListCollection(list){
+    return (
+        <>
+        <ul>
+            {list.map ( (item) => <ItemCollection p={item}/>)}
+        </ul>
         </>
     )
 }
