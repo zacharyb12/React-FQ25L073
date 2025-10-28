@@ -4,6 +4,13 @@ function DemoComposant(){
     return (
         <>
 
+        <div>
+            <h4>Demo Composant</h4>
+            <TitreComposant title="Titre du composant" />
+            <ParagrapheComposant />
+            <ParagrapheComposant value="Voici la valeur du paragraphe" />
+        </div>
+
         
         <h1 className="text-center mt-3">Les composants avec React</h1>
 
@@ -75,6 +82,27 @@ function DemoComposant(){
         </>
     )
 }
+
+// Demo Composant -------------------------------------------------------------
+// Pour creer un composant avec d'autres composants
+
+// Composant Titre reutilisable
+function TitreComposant({title}){
+    return(  <h1 className='text-center'>{title}</h1>   )
+}
+
+// Composant Paragraphe reutilisable
+function ParagrapheComposant({value = "Ce texte n'est pas disponible"}){
+    return(
+        <>
+        <p className='text-center mt-3'>{value}</p>
+        </>
+    )
+}
+
+
+// ----------------------------------------------------------------------------
+
 
 // Demo Composant -------------------------------------------------------------
 function DemoComposantSimple(){

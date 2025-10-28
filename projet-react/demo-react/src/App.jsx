@@ -4,22 +4,26 @@ import DemoComposant from './pages/demo/A.composant'
 import Exo1 from './pages/exo/exo-1'
 import Homepage from './pages/homepage';
 import Navbar from './components/navbar';
+import DemoConditionnel from './pages/demo/B.conditionnel';
+import DemoCollections from './pages/demo/C.collections';
+
 
 function App() {
 
   return ( 
     <Router>
-      <Navbar />
 
+      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
 
-        {/* Demonstration */}
-        <Route path="composant" element={<DemoComposant />} />
+          {/* Demo Composant */}
+          <Route path="/demo-composant" element={<DemoComposant />} />
+          <Route path="/demo-conditionnel" element={<DemoConditionnel />} />
+          <Route path="/demo-collections" element={<DemoCollections />} />
 
-        {/* Exercices */}
-        <Route path="exo-1" element={<Exo1 />} />
-
+          {/* Exo */}
+          <Route path="/exo1" element={<Exo1 />} />
       </Routes>
 
     </Router>

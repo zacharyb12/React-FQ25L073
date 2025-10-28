@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Exo1 from "./exo/exo-1";
 
 function Homepage() {
     return (

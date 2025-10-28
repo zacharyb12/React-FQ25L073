@@ -6,7 +6,6 @@
 function Exo1({nom = "inconnu",prenom = "inconnu",age = 0,jour = "inconnu"}){
     return(
         <>
-            <h1 style={{textAlign : "center", color : "blue"}}>Exercice 1 : creation d'un composant avec props</h1>
             <h1 className="text-center m-auto mt-3">Exercice 1 : creation d'un composant avec props</h1>
 
             <div className="card text-center mt-3 bg-primary">
