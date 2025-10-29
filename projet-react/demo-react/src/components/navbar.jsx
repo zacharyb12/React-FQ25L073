@@ -13,7 +13,7 @@ function Navbar(){
 
                 {/*Affichage conditionnel des liens , utilisation d'une variable ( state )*/}
                 {/* l' element se referme si on sort de la zone  ou si on clique */}
-                {isDemoOpen ? <ul className="navbar-links-open" onMouseLeave={() => setIsDemoOpen(!isDemoOpen)} onClick={ () => setIsDemoOpen(!isDemoOpen)} >                   >
+                {isDemoOpen ? <ul className="navbar-links-open" onMouseLeave={() => setIsDemoOpen(!isDemoOpen)} onClick={ () => setIsDemoOpen(!isDemoOpen)} >
                         
                         {/* Liens */}
                         <li><Link to="/demo-composant">Composant</Link></li>
@@ -44,7 +44,7 @@ function Navbar(){
                 :
 
                 <button className="bg-white p-05 rounded" onClick={() => setIsExoOpen(!isExoOpen)}>Exo</button>
-                
+
                 }
 
                 </ul>
