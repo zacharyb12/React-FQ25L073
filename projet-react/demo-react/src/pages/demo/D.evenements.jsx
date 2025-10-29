@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function EvenementsPage() {
-    // Exemple 1 
+    // Exemple 1  : evenement + fonction
     function handleClick(){
         alert("Bouton cliqué via une fonction!");
     }
@@ -19,6 +19,11 @@ function EvenementsPage() {
     // Implementation d'une fonction pour la lisibilité
     function multiplyByTen(){
         setResult(result * 10);
+    }
+
+    // Exemple 4 : evenement avec input
+    function handleInputChange(event){
+        console.log(event.target.value)
     }
 
     return (
@@ -45,6 +50,11 @@ function EvenementsPage() {
             <p>{result}</p>
             <button onClick={multiplyByTen}>Cliquez-moi!</button>
             <button onClick={() => setResult(result * 10)}>Cliquez-moi!</button>
+        </div>
+
+        <div>
+            <h2>Evenements avec input</h2>
+            <input type="text" onChange={handleInputChange} />
         </div>
         </>
     )
