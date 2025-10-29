@@ -6,6 +6,8 @@ import Homepage from './pages/homepage';
 import Navbar from './components/navbar';
 import DemoConditionnel from './pages/demo/B.conditionnel';
 import DemoCollections from './pages/demo/C.collections';
+import ListProductsPage from './pages/exo/exo-2';
+import EvenementsPage from './pages/demo/D.evenements';
 
 
 function App() {
@@ -21,9 +23,11 @@ function App() {
           <Route path="/demo-composant" element={<DemoComposant />} />
           <Route path="/demo-conditionnel" element={<DemoConditionnel />} />
           <Route path="/demo-collections" element={<DemoCollections />} />
+          <Route path="/demo-evenements" element={<EvenementsPage />} />
 
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />
+          <Route path="/exo2" element={<ListProductsPage />} />
       </Routes>
 
     </Router>
