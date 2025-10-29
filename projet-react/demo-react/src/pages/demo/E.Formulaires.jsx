@@ -157,6 +157,7 @@ function FormulairesPages(){
 
         <div className="card mt-3 w-75 text-center">
             <p>On recupere toutes les valeurs du formulaire dans un seul state (de type object)</p>
+                        <p>Valeur : {`${inputUserInfo.lastname} - ${inputUserInfo.firstname} à ${inputUserInfo.age} ans `}</p>
             <pre>{`onChange => {handleSubmitControlUnique}`}</pre>
                 <form onSubmit={handleSubmitControlUnique}>
 
