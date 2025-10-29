@@ -8,6 +8,7 @@ import DemoConditionnel from './pages/demo/B.conditionnel';
 import DemoCollections from './pages/demo/C.collections';
 import ListProductsPage from './pages/exo/exo-2';
 import EvenementsPage from './pages/demo/D.evenements';
+import Compteur from './pages/exo/exo-3';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />
           <Route path="/exo2" element={<ListProductsPage />} />
+          <Route path="/exo3" element={<Compteur />} />
       </Routes>
 
     </Router>

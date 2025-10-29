@@ -1,16 +1,37 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar(){
+    const [isDemoOpen, setIsDemoOpen] = useState(false);
+    const [isExoOpen, setIsExoOpen] = useState(false);
+
     return (
-            <nav>
+            <nav className="navbar">
                 <ul>
-                <Link to="/">Homepage</Link>
-                <Link to="/demo-composant">Demo Composant</Link>
-                <Link to="/demo-conditionnel">Demo Conditionnel</Link>
-                <Link to="/demo-collections">Demo Collections</Link>
-                <Link to="/demo-evenements">Demo Evenements</Link>
-                <Link to="/exo1">Exo 1</Link>
-                <Link to="/exo2">Exo 2</Link>
+                <Link className="bg-white p-05 rounded" style={{color : 'black !important'}} to="/">Homepage</Link>
+
+                {isDemoOpen ?
+                    <ul className="navbar-links-open" onMouseLeave={() => setIsDemoOpen(!isDemoOpen)}>
+                        
+                        <li><Link to="/demo-composant">Composant</Link></li>
+                        <li><Link to="/demo-conditionnel">Conditionnel</Link></li>
+                        <li><Link to="/demo-collections">Collections</Link></li>
+                        <li><Link to="/demo-evenements">Evenements</Link></li>
+                    </ul> 
+                :
+                <button className="bg-white p-05 rounded" onClick={() => setIsDemoOpen(!isDemoOpen)}>Demo</button> 
+                }
+
+                {isExoOpen ?
+                    <ul className="navbar-links-open" onMouseLeave={() => setIsExoOpen(!isExoOpen)}>
+                        <li><Link to="/exo1">Composant</Link></li>
+                        <li><Link to="/exo2">List</Link></li>
+                        <li><Link to="/exo3">Compteur</Link></li>
+                    </ul>
+                :
+                <button className="bg-white p-05 rounded" onClick={() => setIsExoOpen(!isExoOpen)}>Exo</button>
+                }
+
                 </ul>
             </nav>
     )

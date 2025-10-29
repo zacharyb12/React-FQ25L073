@@ -1,35 +1,42 @@
 import { useState } from "react";
 
 function EvenementsPage() {
-    // Exemple 1  : evenement + fonction
+
+// Exemple 1  : evenement + fonction ------------------
     function handleClick(){
         alert("Bouton cliqué via une fonction!");
     }
+// ----------------------------------------------------
 
-    // Exemple 2 : state + evenement
+// Exemple 2 : state + evenement------------------
     const [value , setValue] = useState(false);
 
     function toggleValue(){
         setValue(!value)
     }
+// ----------------------------------------------------
 
-    // Exemple 3 : state + evenement 
+// Exemple 3 : state + evenement ------------------
     const [result , setResult] = useState(1);
 
     // Implementation d'une fonction pour la lisibilité
     function multiplyByTen(){
         setResult(result * 10);
     }
+// ----------------------------------------------------
 
-    // Exemple 4 : evenement avec input
+
+// Exemple 4 : evenement avec input------------------
     function handleInputChange(event){
         console.log(event.target.value)
     }
+// ----------------------------------------------------
+
 
     return (
         <>
         <h1>Les evenements React</h1>
-
+        {/* Exemple 1 */}
         <div>
             <h2>Utilisation des evenements 1</h2>
             <p>Definir une action et la lié avec une fonction flechée ou un fonction déclarée</p>
@@ -37,6 +44,7 @@ function EvenementsPage() {
             <button onClick={() => alert("Bouton cliqué via une fonction flechée!")}>Cliquez-moi!</button>
         </div>
 
+        {/* Exemple 2 */}
         <div>
             <h2>Utilisation des evenements 2</h2>
             <p>Definir une action et la lié avec une fonction flechée ou un fonction déclarée</p>
@@ -44,6 +52,7 @@ function EvenementsPage() {
             <button onClick={toggleValue}>Cliquez-moi!</button>
         </div>
 
+        {/* Exemple 3 */}
         <div>
             <h2>Utilisation des evenements 2</h2>
             <p>Definir une action et la lié avec une fonction flechée ou un fonction déclarée</p>
@@ -52,6 +61,7 @@ function EvenementsPage() {
             <button onClick={() => setResult(result * 10)}>Cliquez-moi!</button>
         </div>
 
+        {/* Exemple 4 */}
         <div>
             <h2>Evenements avec input</h2>
             <input type="text" onChange={handleInputChange} />
