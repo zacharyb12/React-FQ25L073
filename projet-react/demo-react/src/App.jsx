@@ -9,6 +9,7 @@ import DemoCollections from './pages/demo/C.collections';
 import ListProductsPage from './pages/exo/exo-2';
 import EvenementsPage from './pages/demo/D.evenements';
 import Compteur from './pages/exo/exo-3';
+import FormulairesPages from './pages/demo/E.Formulaires';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/demo-conditionnel" element={<DemoConditionnel />} />
           <Route path="/demo-collections" element={<DemoCollections />} />
           <Route path="/demo-evenements" element={<EvenementsPage />} />
+          <Route path="/demo-formulaires" element={<FormulairesPages />} />
 
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />
