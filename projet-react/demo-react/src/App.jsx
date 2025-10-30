@@ -10,6 +10,9 @@ import ListProductsPage from './pages/exo/exo-2';
 import EvenementsPage from './pages/demo/D.evenements';
 import Compteur from './pages/exo/exo-3';
 import FormulairesPages from './pages/demo/E.Formulaires';
+import ExoFormUser from './pages/exo/exo-4';
+import CalculatricePage from './pages/exo/exo-4.1';
+import CommunicationPage from './pages/demo/F.communication';
 
 
 function App() {
@@ -27,11 +30,14 @@ function App() {
           <Route path="/demo-collections" element={<DemoCollections />} />
           <Route path="/demo-evenements" element={<EvenementsPage />} />
           <Route path="/demo-formulaires" element={<FormulairesPages />} />
+          <Route path="/demo-communication" element={<CommunicationPage />} />
 
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />
           <Route path="/exo2" element={<ListProductsPage />} />
           <Route path="/exo3" element={<Compteur />} />
+          <Route path="/exo4/form" element={<ExoFormUser />} />
+          <Route path="/exo4.1/calculatrice" element={<CalculatricePage />} />
       </Routes>
 
     </Router>
