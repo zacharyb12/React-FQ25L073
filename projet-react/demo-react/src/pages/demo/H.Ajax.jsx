@@ -66,7 +66,17 @@ useEffect(() => {
             `}</pre>
         </div>
 
-        <div>
+        <div className="mt-3 card w-75 m-auto p-2">
+            <p>Pour Utiliser axios :</p>
+            <ul>
+                <li>installer axios : <pre>npm install axios</pre></li>
+                <li>importer axios : <pre>import axios from 'axios';</pre></li>
+                <li>utiliser axios : <pre>axios.get('https://api.example.com/data')</pre></li>
+            </ul>
+        </div>
+
+        <div className="mt-3 card w-75 m-auto p-2">
+
             <h3>utilisation de useEffect</h3>
             <button onClick={() => setShowPicture(!showPicture)}>Get Data from UseEffect</button>
         </div>
