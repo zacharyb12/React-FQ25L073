@@ -23,6 +23,8 @@ function Navbar() {
                             <li><Link to="/demo-evenements">Evenements</Link></li>
                             <li><Link to="/demo-formulaires">Formulaires</Link></li>
                             <li><Link to="/demo-communication">Communication</Link></li>
+                            <li><Link to="/demo-useEffect">Hooks useEffect</Link></li>
+                            <li><Link to="/demo-ajax">Ajax et Fetch</Link></li>
 
                         </ul>
                     </li>
@@ -47,6 +49,7 @@ function Navbar() {
                             <li><Link to="/exo3">Compteur</Link></li>
                             <li><Link to="/exo4/form">Formulaire user</Link></li>
                             <li><Link to="/exo4.1/calculatrice">Calculatrice</Link></li>
+                            <li><Link to="/exo5/todo">Todo List</Link></li>
 
                         </ul>
                     </li>

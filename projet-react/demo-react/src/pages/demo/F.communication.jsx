@@ -239,7 +239,7 @@ function CommunicationParentFreres(){
 
     useEffect(() => {
                        // ["message1", "message2", "nouveau message"]
-        setList([...listParent           , valueInput])
+        setList(() =>[...listParent           , valueInput])
     },[valueInput])
 
     return (
