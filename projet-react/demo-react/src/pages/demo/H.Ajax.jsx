@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 
 
@@ -7,6 +7,7 @@ function AjaxPage(){
     const [dataFetch , setDataFetch] = useState(null);
     const [dataAxios, setDataAxios] = useState(null);
     const [errorMessage , setErrorMessage] = useState(null);
+    const [showPicture , setShowPicture] = useState(false);
 
 async function getDataFetch(){
     try{
@@ -36,6 +37,22 @@ async function getDataAxios(){
     
 }
 
+
+useEffect(() => {
+    if(showPicture){
+        getDataAxios();
+        getDataFetch();
+    }
+        
+    return() => {
+        setDataAxios(null);
+        setDataFetch(null);
+        setErrorMessage(null);
+    }
+
+},[showPicture])
+
+
     return(
         <>
         <h1 className="text-center mt-3">Demo Ajax et Fetch</h1>
@@ -50,8 +67,8 @@ async function getDataAxios(){
         </div>
 
         <div>
-            <h3>Utilisation de axios</h3>
-            <p></p>
+            <h3>utilisation de useEffect</h3>
+            <button onClick={() => setShowPicture(!showPicture)}>Get Data from UseEffect</button>
         </div>
 
         <div className="mt-3 card w-75 m-auto p-2 text-center">
