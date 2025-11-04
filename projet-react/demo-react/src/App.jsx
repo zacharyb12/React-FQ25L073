@@ -16,9 +16,13 @@ import CommunicationPage from './pages/demo/F.communication';
 import ContainerPage from './pages/exo/exo-5';
 import HooksUseEffectPage from './pages/demo/G.hooks-useEffect';
 import AjaxPage from './pages/demo/H.Ajax';
+import DemoHooksPerso from './pages/demo/J.hooks-perso';
+import DemoUseContext from './pages/demo/K.useContext';
+import NavigationParamsPage from './pages/demo/I.navigation';
 
 
 function App() {
+
 
   return ( 
     <Router>
@@ -36,6 +40,9 @@ function App() {
           <Route path="/demo-communication" element={<CommunicationPage />} />
           <Route path="/demo-useEffect" element={<HooksUseEffectPage />} />
           <Route path="/demo-ajax" element={<AjaxPage />} />
+          <Route path="/demo-hooks-perso" element={<DemoHooksPerso />} />
+          <Route path="/demo-useContext" element={<DemoUseContext />} />
+          <Route path="/demo-navigation" element={<NavigationParamsPage />} />
 
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />

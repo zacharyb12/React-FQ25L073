@@ -93,7 +93,8 @@ function FormulairesPages(){
         <>
         <h1 className="text-center mt-3">Les formulaires</h1>
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-primary">
+                <div className="card p-1 bg-white">
             <h2>On retrouve deux types de formulaires</h2>
             <ul>
                 <li>Les formulaires controlé</li>
@@ -104,21 +105,26 @@ function FormulairesPages(){
             <p>Un formulaire controlé consiste a recuperer les valeurs via des states</p>
 
         </div>
+        </div>
 
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <p>On log directement l'information depuis l'input a chaque changement</p>
             <pre>{`onChange => {console.log(e.target.value)}`}</pre>
             <input type="text" onChange={(e) => console.log(e.target.value)} />
         </div>
+        </div>
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <p>On log directement l'information depuis l'input a chaque changement en passant par une fonction</p>
             <pre>{`onChange => {handleChange}`}</pre>
             <input type="text" onChange={handleChange} />
         </div>
-
-        <div className="card mt-3 w-75 text-center">
+        </div>
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <p>On log directement l'information depuis un formulaire qui contient les valeurs</p>
             <p>On identifie chaque input grace a son id</p>
             <pre>{`onChange => {handleSubmit}`}</pre>
@@ -127,8 +133,10 @@ function FormulairesPages(){
                 <button type="submit">send</button>
             </form>
         </div>
+        </div>
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <h2>Utilisation du state</h2>
             <p>On log directement l'information depuis un formulaire controlé</p>
             <pre>{`onChange => {handleSubmitControl}`}</pre>
@@ -154,8 +162,10 @@ function FormulairesPages(){
 
                 </form>
         </div>
+        </div>
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <p>On recupere toutes les valeurs du formulaire dans un seul state (de type object)</p>
                         <p>Valeur : {`${inputUserInfo.lastname} - ${inputUserInfo.firstname} à ${inputUserInfo.age} ans `}</p>
             <pre>{`onChange => {handleSubmitControlUnique}`}</pre>
@@ -180,8 +190,10 @@ function FormulairesPages(){
 
                 </form>
         </div>
+        </div>
 
-        <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <p>On retrouve plusieurs type d'input le fonctionnement reste le même </p>
             <p>Valeur textarea : {inputTextareaInfo.textarea}</p>
             <pre>{`onChange => {handleSubmitControlTextarea}`}</pre>
@@ -196,8 +208,10 @@ function FormulairesPages(){
 
                 </form>
         </div>
+        </div>
 
-                <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
                     <p>On retrouve plusieurs type d'input le fonctionnement reste le même </p>
                     <p>Valeur select : {inputSelectInfo.select}</p>
             <pre>{`onChange => {handleSubmitSelect}`}</pre>
@@ -216,8 +230,10 @@ function FormulairesPages(){
 
                 </form>
         </div>
+        </div>
 
-                <div className="card mt-3 w-75 text-center">
+            <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <h2>Demo Formulaires</h2>
 
             <p>Valeur quantité : {valueForm.total}€ est de type {typeof valueForm.total}</p>
@@ -245,6 +261,7 @@ function FormulairesPages(){
 
                 </form>
             </div>
+        </div>
         </div>
 
 

@@ -25,6 +25,9 @@ function Navbar() {
                             <li><Link to="/demo-communication">Communication</Link></li>
                             <li><Link to="/demo-useEffect">Hooks useEffect</Link></li>
                             <li><Link to="/demo-ajax">Ajax et Fetch</Link></li>
+                            <li><Link to="/demo-hooks-perso">Hooks Perso</Link></li>
+                            <li><Link to="/demo-useContext">useContext</Link></li>
+                            <li><Link to="/demo-navigation">Navigation</Link></li>
 
                         </ul>
                     </li>

@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import Exo1 from "./exo/exo-1";
 
 function Homepage() {
+
+
     return (
         <>
             <h1 className="mt-3 text-center">Homepage</h1>

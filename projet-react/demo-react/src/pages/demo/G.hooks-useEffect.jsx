@@ -64,7 +64,8 @@ function toggleShowCount(){
     return (
         <>
         <h1 className="mt-3 text-center">Hooks useEffect</h1>
-        <div className="mt-3 card w-75 m-auto p-2">
+            <div className="card w-75 mt-3 p-1 text-center bg-primary">
+                <div className="card p-1 bg-white">
             <p>UseEffect Permet de gerer les effets de bord dans les composants fonctionnels.</p>
             <p>il s'utilise de plusieurs façons : </p>
             <ul>
@@ -73,29 +74,38 @@ function toggleShowCount(){
                 <li>Effectuer une action lors du demontage du composant</li>
             </ul>
         </div>
+        </div>
 
-        <div className="mt-3 card w-75 m-auto p-2">
+                <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <h3>Effectuer une action au chargement du composant</h3>
             <pre>{`useEffect(() => { code à executer},[]);`}</pre>
         </div>
+        </div>
 
-        <div className="mt-3 card w-75 m-auto p-2">
+                <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <h3>Effectuer une action lors du changement d'une valeur observée</h3>
             <pre>{`useEffect(() => { code à executer},[valeur]);`}</pre>
         </div>
+        </div>
 
-        <div className="mt-3 card w-75 m-auto p-2">
+                <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <h3>Effectuer une action lors du dechargement du composant</h3>
             <pre>{`useEffect(() => { return () => { code à executer } },[valeur]);`}</pre>
         </div>
+        </div>
 
-        <div className="mt-3 card w-75 m-auto p-2 text-center">
+                <div className="card w-75 mt-3 p-1 text-center bg-secondary">
+                <div className="card p-1 bg-white">
             <button onClick={toggleShowCount}>{showCounter ? "Cacher" : "Montrer"}</button>
             {showCounter ? (
                 <Test/>
             ) : (
                 null
             )}
+        </div>
         </div>
         </>
     )

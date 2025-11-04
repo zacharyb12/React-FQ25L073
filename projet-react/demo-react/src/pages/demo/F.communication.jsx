@@ -93,7 +93,7 @@ function CommunicationPage(){
             </div>
 
             <div className="card w-75 mt-3 p-1 text-center bg-secondary">
-                <div className="card p-1 bg-white">
+                <div className="card p-1 mt-1 bg-white">
                     <pre>{`function CommunicationParentFreres(){
 
     const [listParent , setList] = useState([]);
@@ -131,7 +131,7 @@ function CommunicationPage(){
     )
 }`}</pre>
                 </div>
-                <div className="card p-1 bg-white">
+                <div className="card p-1 mt-1 bg-white">
                     <pre>{`function CommunicationFrere1({action}){
     return (
         <>
@@ -146,7 +146,7 @@ function CommunicationPage(){
     )
 }`}</pre>
                 </div>
-                <div className="card p-1 bg-white">
+                <div className="card p-1 mt-1 bg-white">
                     <pre>{`function CommunicationFrere2({list}){
     return (
         <>
