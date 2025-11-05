@@ -28,6 +28,7 @@ function Navbar() {
                             <li><Link to="/demo-hooks-perso">Hooks Perso</Link></li>
                             <li><Link to="/demo-useContext">useContext</Link></li>
                             <li><Link to="/demo-navigation">Navigation</Link></li>
+                            <li><Link to="/demo-authentification">Authentification</Link></li>
 
                         </ul>
                     </li>

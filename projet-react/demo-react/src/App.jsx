@@ -19,6 +19,7 @@ import AjaxPage from './pages/demo/H.Ajax';
 import DemoHooksPerso from './pages/demo/J.hooks-perso';
 import DemoUseContext from './pages/demo/K.useContext';
 import NavigationParamsPage from './pages/demo/I.navigation';
+import Authentification from './pages/demo/L.authentification';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/demo-hooks-perso" element={<DemoHooksPerso />} />
           <Route path="/demo-useContext" element={<DemoUseContext />} />
           <Route path="/demo-navigation" element={<NavigationParamsPage />} />
+          <Route path="/demo-authentification" element={<Authentification/>} />
 
           {/* Exo */}
           <Route path="/exo1" element={<Exo1 />} />
